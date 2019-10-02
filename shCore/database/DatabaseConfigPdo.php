@@ -8,7 +8,7 @@ namespace shCore\database;
  * Class DatabaseConfigPDO
  * @package IwCore\database
  */
-class DatabaseConfigPDO
+class DatabaseConfigPdo
 {
     /**
      * @var string MYSQL константа содержит тип базы данных
