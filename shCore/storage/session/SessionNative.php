@@ -2,7 +2,9 @@
 
 namespace shCore\storage\session;
 
-class SessionNative implements SessionInterface
+use shCore\storage\Storage;
+
+class SessionNative extends Storage implements SessionInterface
 {
     /**
      * @var string KEY_STORAGE ключ к Харнилищу

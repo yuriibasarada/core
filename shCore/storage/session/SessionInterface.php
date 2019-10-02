@@ -2,8 +2,9 @@
 
 namespace shCore\storage\session;
 
+use shCore\storage\StorageInterface;
 
-interface SessionInterface
+interface SessionInterface extends StorageInterface
 {
     /**
      * Запуск сесии
