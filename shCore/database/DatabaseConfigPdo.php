@@ -1,76 +1,85 @@
 <?php
 
+
 namespace shCore\database;
 
-class DatabaseConfigPdo
+/**
+ * Класс для хранения данных для подключения к БД
+ * Class DatabaseConfigPDO
+ * @package IwCore\database
+ */
+class DatabaseConfigPDO
 {
     /**
-     * Тип базы данных
-     * @var $driver
+     * @var string MYSQL константа содержит тип базы данных
      */
-    public $driver = 'mysql';
+    const MYSQL = 'mysql';
+    /**
+     * @var string $driver переменная содержит тип базы данных
+     */
+    public $driver = self::MYSQL;
 
     /**
-     * Имя хоста
-     * @var $host
+     * @var string $host переменная содержит имя хоста
      */
-    public $host;
+    public $host = '';
 
     /**
-     * Название порта
-     * @var $port
+     * @var string $port переменная сожержит названия порта
      */
-    public $port;
+    public $port = '';
 
     /**
-     * Название базы данных
-     * @var $db_name
+     * @var string $db_name переменная содержит имя базы данных
      */
-    public $db_name;
+    public $db_name = '';
 
     /**
-     * Имя пользователя
-     * @var $username
+     * @var string $username переменная содержит имя пользователя
      */
-    public $username;
+    public $username = '';
 
     /**
-     * Пароль
-     * @var $password
+     * @var string $password переменная содержит пароль к базе данных
      */
-    public $password;
+    public $password = '';
 
     /**
-     * Кодировка обращения
-     * @var $charset
+     * @var string $charset переменная содержит кодировку обращения к базе данных
      */
-    public $charset;
+    public $charset = '';
 
     /**
-     * Опции подключения
-     * @var $option
+     * @var array $options переменная содержит опции подключения к базе данных
      */
     public $options = array();
 
-
     /**
      * Инициализация свойств класса
-     * DatabaseConfigPdo constructor.
+     *
+     * DatabaseConfigPDO constructor.
+     *
      * @param array $arr
      */
     public function __construct($arr = array())
     {
         foreach ($arr as $key => &$item) {
-            if(isset($this->$key)) $this->$key = $item;
+            if (isset($this->$key)) $this->$key = $item;
         }
     }
 
+    /**
+     * Функция Возвращает DNS строку
+     *
+     * @return string
+     */
     public function getDSN()
     {
         return $this->driver . ':'
-        . 'host=' . $this->host . ';'
-        . 'dbname=' . $this->db_name
-        . (($this->port) ? ';port=' . $this->port : '')
-        . (($this->charset) ? ';charset=' . $this->charset : '');
+            . 'host=' . $this->host . ';'
+            . 'dbname=' . $this->db_name
+            . (($this->port) ? ';port=' . $this->port : '')
+            . (($this->charset) ? ';charset=' . $this->charset : '');
     }
+
 }
