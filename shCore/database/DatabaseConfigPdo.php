@@ -8,7 +8,7 @@ class DatabaseConfigPdo
      * Тип базы данных
      * @var $driver
      */
-    public $driver;
+    public $driver = 'mysql';
 
     /**
      * Имя хоста
