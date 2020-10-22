@@ -6,7 +6,7 @@
  * Time: 10:46
  */
 
-namespace shCore\database;
+namespace Core\database;
 
 interface ResultInterface
 {

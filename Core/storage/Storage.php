@@ -1,6 +1,6 @@
 <?php
 
-namespace shCore\storage;
+namespace Core\storage;
 
 class Storage implements StorageInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace shCore\database\ext;
+namespace Core\database\ext;
 
-use shCore\database\ResultPdo;
-use shCore\error\CoreException;
+use Core\database\ResultPdo;
+use Core\error\CoreException;
 
 /**
  * Interface CrudInterface

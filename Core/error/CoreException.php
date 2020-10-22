@@ -1,7 +1,7 @@
 <?php
 
 
-namespace shCore\error;
+namespace Core\error;
 
 
 use Exception;

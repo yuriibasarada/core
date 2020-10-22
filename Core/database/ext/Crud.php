@@ -1,12 +1,12 @@
 <?php
 
 
-namespace shCore\database\ext;
+namespace Core\database\ext;
 
 
-use shCore\database\DatabasePdo;
-use shCore\database\ResultPdo;
-use shCore\error\CoreException;
+use Core\database\DatabasePdo;
+use Core\database\ResultPdo;
+use Core\error\CoreException;
 
 /**
  * Create Read Update Delete + Page Search

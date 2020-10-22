@@ -1,7 +1,7 @@
 <?php
 
 
-namespace shCore\database;
+namespace Core\database;
 
 /**
  * Класс для хранения данных для подключения к БД

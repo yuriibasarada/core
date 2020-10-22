@@ -1,6 +1,6 @@
 <?php
 
-namespace shCore\database;
+namespace Core\database;
 
 interface DatabaseInterface
 {

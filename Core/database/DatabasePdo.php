@@ -1,8 +1,8 @@
 <?php
 
-namespace shCore\database;
+namespace Core\database;
 
-use shCore\error\CoreException;
+use Core\error\CoreException;
 use PDO;
 
 

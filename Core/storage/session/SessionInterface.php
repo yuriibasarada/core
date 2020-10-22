@@ -1,8 +1,8 @@
 <?php
 
-namespace shCore\storage\session;
+namespace Core\storage\session;
 
-use shCore\storage\StorageInterface;
+use Core\storage\StorageInterface;
 
 interface SessionInterface extends StorageInterface
 {

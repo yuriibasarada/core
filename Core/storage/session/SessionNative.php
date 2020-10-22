@@ -1,8 +1,8 @@
 <?php
 
-namespace shCore\storage\session;
+namespace Core\storage\session;
 
-use shCore\storage\Storage;
+use Core\storage\Storage;
 
 class SessionNative extends Storage implements SessionInterface
 {

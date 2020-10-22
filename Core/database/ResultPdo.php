@@ -6,7 +6,7 @@
  * Time: 10:53
  */
 
-namespace shCore\database;
+namespace Core\database;
 
 use PDO;
 use PDOStatement;
